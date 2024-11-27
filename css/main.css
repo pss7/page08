@@ -1,4 +1,5 @@
 /* 공통 */
+#wrap{overflow-x: hidden;}
 .floorInfoBox{margin-bottom: 44px; display: flex; align-items: center; justify-content: center;}
 .floorInfoBox .floorInfo{display: flex; border: 2px solid #000; border-radius: 4px; overflow: hidden;}
 .floorInfoBox .floorInfo li{width: 65px; height: 65px; line-height: 65px; background-color: #fff; text-align: center; font-size: 24px; color: #bbb; font-weight: 700;}
@@ -23,11 +24,9 @@
 
 }
 
-.titleBox{margin-bottom: 32px;}
+.titleBox{position: relative; margin-bottom: 32px;}
 .titleBox .title{margin-bottom: 14px; font-size: 60px; color: #313131; font-weight: 600; text-align: center;}
 .titleBox .text{display: block; text-align: center; font-size: 24px; color: #343434;}
-
-
 
 @media (max-width: 1199px){
 
@@ -196,8 +195,8 @@
 #infoWrap{position: relative; padding: 140px 0; background-color: #F1F1E7; border-top: 2px solid #202020;}
 #infoWrap::before{width: 364px; height: 496px; content: ''; position: absolute; top:159px; left:0; background: url(../images/clock_img.svg)no-repeat center; background-size: cover;}
 #infoWrap::after{width: 581px; height: 717px; content: ''; position: absolute; bottom: -272px; right:0; background: url(../images/key_img.svg)no-repeat center; background-size: cover;}
-#infoWrap .imgBox{position: relative; z-index: 9;}
-#infoWrap .imgBox img{display: block; margin: 0 auto;}
+#infoWrap .imgBox{padding: 0 30px; position: relative; z-index: 9;}
+#infoWrap .imgBox img{display: block; max-width: 640px; width: 100%; margin: 0 auto;}
 
 @media (max-width: 1199px){
 
@@ -209,6 +208,15 @@
 
 @media (max-width: 767px){
 
-  
+  #infoWrap::before{width: 176px; height: 239px;}
+  #infoWrap::after{bottom: 217px; width: 300px; height: 250px; right: 88px;}
+
+}
+
+@media (max-width: 576px){
+
+  #infoWrap{padding: 232px 0 277px;}
+  #infoWrap::before{top: 39px; width: 150px; height: 202px;}
+  #infoWrap::after{width: 170px; bottom: 57px; right: 34px;}
 
 }
