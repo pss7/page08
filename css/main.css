@@ -137,12 +137,39 @@
 
 /* cardWrap */
 #cardWrap{padding: 170px 20px; background-color: #FEF9F3;}
-#cardWrap .cardBox{position: relative; width: 431px; height: 707px;}
-#cardWrap .cardBox img{position: absolute; left:0; top:0; transition: all 1s;}
+#cardWrap .cardBox{ position: relative; width: 431px; height: 707px; margin: 0 auto; }
+#cardWrap .cardBox img{position: absolute; left:0; top:0;  transition: all 1s;}
 #cardWrap .cardBox .frontCard{z-index: 1;}
-#cardWrap .cardBox .backCard{transform: rotate(-4deg); top: 17px; left: 30px;}
-#cardWrap .cardBox:hover .frontCard{transform: rotateY(-180deg);}
-#cardWrap .cardBox:hover .backCard{transform: rotateY(0deg);}
+#cardWrap .cardBox.active .frontCard{ transform: rotateY(-180deg); }
+#cardWrap .cardBox.active .backCard{transform: rotateY(-180deg); z-index: 2;}
+
+@media (max-width: 1199px){
+
+  #cardWrap .cardBox{width: 350px; height: 533px;}
+  #cardWrap .cardBox img{width: 350px;}
+
+}
+
+@media (max-width: 767px){
+
+  #cardWrap .cardBox{width: 300px; height: 457px;}
+  #cardWrap .cardBox img{width: 300px;}
+
+}
+
+@media (max-width: 576px){
+
+  #cardWrap .cardBox{width: 270px; height: 411px;}
+  #cardWrap .cardBox img{width: 270px;}
+
+}
+
+@media (max-width: 360px){
+
+  #cardWrap .cardBox{width: 250px; height: 380px;}
+  #cardWrap .cardBox img{width: 250px;}
+
+}
 
 /* floorWrap */
 #floorWrap{padding: 0 0 7.29vw; position: relative; z-index: 1;}
@@ -205,7 +232,9 @@
 
 /* infoWrap */
 #infoWrap{position: relative; padding: 140px 0; background-color: #F1F1E7; border-top: 2px solid #202020;}
-#infoWrap::before{width: 364px; height: 496px; content: ''; position: absolute; top:159px; left:0; background: url(../images/clock_img.svg)no-repeat center; background-size: cover; animation: iconEffect 7s linear infinite;}
+#infoWrap .clockImg{position: absolute; top:159px; left:-120px; width: 496px; height: 496px;}
+#infoWrap .clockImg .clockImg01{width: 496px; height: 496px; content: ''; position: absolute; top:0; left:0; animation: iconEffect 7s linear infinite;}
+#infoWrap .clockImg .clockImg02{width: 310px; height: 317px; position: absolute; top: 80px; left: 48%; transform: translateX(-50%);}
 #infoWrap::after{width: 581px; height: 717px; content: ''; position: absolute; bottom: -272px; right:0; background: url(../images/key_img.svg)no-repeat center; background-size: cover; z-index: 9;}
 #infoWrap .imgBox{padding: 0 30px; position: relative; z-index: 9;}
 #infoWrap .imgBox img{display: block; max-width: 640px; width: 100%; margin: 0 auto;}
@@ -224,8 +253,12 @@
 @media (max-width: 1199px){
 
   #infoWrap{padding: 140px 0 500px;}
-  #infoWrap::before{width: 283px; height: 387px;}
+  #infoWrap::before{top: 50px; width: 283px; height: 387px;}
   #infoWrap::after{bottom: 85px; width: 427px; height: 356px;}
+
+  #infoWrap .clockImg{top:159px; left:-120px; width: 350px; height: 350px;}
+  #infoWrap .clockImg .clockImg01{width: 350px; height: 350px; }
+  #infoWrap .clockImg .clockImg02{width: 230px; height: 250px; top: 39px;}
 
 }
 
@@ -234,11 +267,19 @@
   #infoWrap::before{width: 176px; height: 239px;}
   #infoWrap::after{bottom: 217px; width: 300px; height: 250px; right: 88px;}
 
+  #infoWrap .clockImg{ top:24px; left:-50px; width: 230px; height: 230px;}
+  #infoWrap .clockImg .clockImg01{width: 230px; height: 230px; }
+  #infoWrap .clockImg .clockImg02{width: 150px; height: 180px; top: 20px;}
+
+
 }
 
 @media (max-width: 576px){
 
   #infoWrap{padding: 232px 0 277px;}
+  #infoWrap .clockImg{ top:62px; left:-50px; width: 174px; height: 174px;}
+  #infoWrap .clockImg .clockImg01{width: 174px; height: 174px; }
+  #infoWrap .clockImg .clockImg02{width: 120px; height: 150px; top: 8px;}
   #infoWrap::before{top: 39px; width: 150px; height: 202px;}
   #infoWrap::after{width: 170px; bottom: 57px; right: 34px;}
 

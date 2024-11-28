@@ -8,23 +8,9 @@ $(function () {
 
   });
 
-  /* 스크롤 
-  $(window).scroll(function () {
+  $('#cardWrap .cardBox').click(function() {
+    $(this).toggleClass('active'); // Toggle the 'active' class on click
+});
 
-    var scrollPosition = $(this).scrollTop() + $(this).height() / 2;
-
-    $('#wellnessWrap').each(function () {
-      var sectionTop = $(this).offset().top;
-      var sectionBottom = sectionTop + $(this).outerHeight();
-
-      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-        $(this).addClass('active');
-      } else {
-        $(this).removeClass('active');
-      }
-    });
-
-  });
-*/
 
 });
