@@ -138,6 +138,9 @@
 /* cardWrap */
 #cardWrap{padding: 170px 20px; background-color: #FEF9F3;}
 #cardWrap .cardBox{ position: relative; width: 431px; height: 707px; margin: 0 auto; }
+#cardWrap .cardBox span{position: absolute; bottom: 92px; right:-350px; color: #FFB654; font-weight: 700; font-size: 32px; font-family: 'STUNNING'; line-height: 1;} 
+#cardWrap .cardBox span::before{content: ''; width: 377px; height: 30px; position: absolute; right: 0; bottom: -44px; background: url(../images/arrow_icon04.svg)no-repeat center; background-size: contain; z-index: 9;} 
+#cardWrap .cardBox::after{content: ''; }
 #cardWrap .cardBox img{position: absolute; left:0; top:0;  transition: all 1s;}
 #cardWrap .cardBox .frontCard{z-index: 1;}
 #cardWrap .cardBox.active .frontCard{ transform: rotateY(-180deg); }
@@ -147,6 +150,8 @@
 
   #cardWrap .cardBox{width: 350px; height: 533px;}
   #cardWrap .cardBox img{width: 350px;}
+  #cardWrap .cardBox span{bottom: 82px; right: -162px; font-size: 26px;}
+  #cardWrap .cardBox span::before{width: 220px;  bottom: -29px;}
 
 }
 
@@ -154,6 +159,8 @@
 
   #cardWrap .cardBox{width: 300px; height: 457px;}
   #cardWrap .cardBox img{width: 300px;}
+  #cardWrap .cardBox span{bottom: 72px; right: -118px; font-size: 18px;}
+  #cardWrap .cardBox span::before{width: 170px;}
 
 }
 
@@ -161,12 +168,15 @@
 
   #cardWrap .cardBox{width: 270px; height: 411px;}
   #cardWrap .cardBox img{width: 270px;}
+  #cardWrap .cardBox span{bottom: 249px; right: -49px; font-size: 12px;}
+  #cardWrap .cardBox span::before{width: 98px;}
 
 }
 
 @media (max-width: 360px){
 
   #cardWrap .cardBox{width: 250px; height: 380px;}
+  #cardWrap .cardBox span{right: -33px; z-index: 9;}
   #cardWrap .cardBox img{width: 250px;}
 
 }
