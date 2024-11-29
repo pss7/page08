@@ -435,17 +435,17 @@
 #meetingWrap .participationBox img{display: block; max-width: 420px; width: 100%; margin: 0 auto 44px;}
 #meetingWrap .participationBox .participationLink{display: block; width: 243px; height: 77px; line-height: 77px; margin: 0 auto; background-color: #242424; text-align: center; color: #fff; font-size: 24px; font-weight: 700; border-radius: 50px; transition: all .3s;}
 #meetingWrap .participationBox .participationLink:hover{transform: scale(1.1)!important;}  
-#meetingWrap .list{position: relative; display: flex; gap: 0 20px; margin-bottom: 20px;}
+#meetingWrap .list{position: relative; display: flex; gap: 0 20px; margin-bottom: 20px; width: 5040px;}
 #meetingWrap .list:last-child{margin-bottom: 0;}
-#meetingWrap .list li{}
+#meetingWrap .list li{width: 420px;}
 #meetingWrap .list li a{padding: 44px 44px 20px; display: block; width: 420px; min-height: 240px; border-radius: 20px; border: 2px solid #000; background-color: #fff;}
 #meetingWrap .list li a p{margin-bottom: 20px; font-size: 24px; font-weight: 500; color: #151515;}
 #meetingWrap .list li a .name{display: block; color: #ababab; font-size: 24px; font-weight: 700;}
 #meetingWrap .list li a:hover{background-color: #333;}
 #meetingWrap .list li a:hover p,
 #meetingWrap .list li a:hover .name{color: #fff;}
-#meetingWrap .list01{ animation: textEffect02 25s linear infinite;}
-#meetingWrap .list02{ animation: textEffect 25s linear infinite;}
+#meetingWrap .list01{ animation: textEffect02 40s linear infinite;}
+#meetingWrap .list02{ animation: textEffect 40s linear infinite;}
 
 @media (max-width: 1780px){
 
@@ -462,6 +462,8 @@
   #meetingWrap .list li a{padding: 35px 35px 20px; width: 350px; min-height: 220px;}
   #meetingWrap .list li a p{margin-bottom: 15px; font-size: 22px;}
   #meetingWrap .list li a .name{font-size: 20px;}
+  #meetingWrap .list{width: 4200px;}
+  #meetingWrap .list li{width: 350px;}
 
 }
 
@@ -476,6 +478,9 @@
   #meetingWrap .list{gap: 0 15px;}
   #meetingWrap .list li a{ padding: 30px 30px 20px; width: 300px; min-height: 180px;}
   #meetingWrap .list li a p{font-size: 18px;}
+  #meetingWrap .list li a .name{font-size: 16px;}
+  #meetingWrap .list{width: 3600px;}
+  #meetingWrap .list li{width: 300px;}
 
 }
 
@@ -516,7 +521,7 @@
 
 @media (max-width: 414px){
 
-  #footer .textEffect{padding: 6px 0;}
+  #footer .textEffect{padding: 8px 0;}
   #footer .textEffect p{gap: 0 9px;}
   #footer .textEffect p span{gap: 0 9px; font-size: 12px;}
   #footer .textEffect p span::before{margin: 0; width: 11px; height: 14px;}
