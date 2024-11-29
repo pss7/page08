@@ -1,3 +1,5 @@
+#main{overflow-x: hidden;}
+
 /* 가운데영역 */
 .container{max-width: 1288px; margin: 0 auto; padding: 0 20px;;}
 
@@ -150,7 +152,7 @@
 
   #cardWrap .cardBox{width: 270px; height: 411px;}
   #cardWrap .cardBox img{width: 270px;}
-  #cardWrap .cardBox span{bottom: 249px; right: -49px; font-size: 12px;}
+  #cardWrap .cardBox span{bottom: 61px; right: -49px; font-size: 12px;}
   #cardWrap .cardBox span::before{width: 98px;}
 
 }
@@ -158,7 +160,8 @@
 @media (max-width: 360px){
 
   #cardWrap .cardBox{width: 250px; height: 380px;}
-  #cardWrap .cardBox span{right: -33px; bottom: 231px; z-index: 9;}
+  #cardWrap .cardBox span{bottom: 58px; right: -33px; z-index: 9;}
+  #cardWrap .cardBox span::before{width: 79px;}
   #cardWrap .cardBox img{width: 250px;}
 
 }
