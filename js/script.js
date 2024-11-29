@@ -8,6 +8,19 @@ $(function () {
 
   });
 
+  var $tiltTag = $('#infoWrap');
+
+  $(window).on('scroll', function () {
+    console.log(scrollTop);
+    var scrollTop = $(window).scrollTop();
+
+    if (scrollTop > 3700) { 
+      $tiltTag.addClass('active')
+    } else {
+      $tiltTag.removeClass('active')
+    }
+  });
+
   /* 카드 */
   $('#cardWrap .cardBox').click(function () {
     $(this).toggleClass('active');
