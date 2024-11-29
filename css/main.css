@@ -438,7 +438,7 @@
 #meetingWrap .list{position: relative; display: flex; gap: 0 20px; margin-bottom: 20px; width: 5040px;}
 #meetingWrap .list:last-child{margin-bottom: 0;}
 #meetingWrap .list li{width: 420px;}
-#meetingWrap .list li a{padding: 44px 44px 20px; display: block; width: 420px; min-height: 240px; border-radius: 20px; border: 2px solid #000; background-color: #fff;}
+#meetingWrap .list li a{padding: 44px 44px 20px; display: block; min-height: 240px; border-radius: 20px; border: 2px solid #000; background-color: #fff;}
 #meetingWrap .list li a p{margin-bottom: 20px; font-size: 24px; font-weight: 500; color: #151515;}
 #meetingWrap .list li a .name{display: block; color: #ababab; font-size: 24px; font-weight: 700;}
 #meetingWrap .list li a:hover{background-color: #333;}
