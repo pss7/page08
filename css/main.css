@@ -500,7 +500,7 @@
 
 #footer{position: relative; background-color: #D1895B;}
 #footer .textEffect{display: flex; align-items: center; padding: 12px 0; }
-#footer .textEffect p{display: flex; align-items: center; gap: 0 16px; color: #FFF3E3; font-size: 40px; animation: textEffect02 30s linear infinite; font-family: 'Nicholas'; white-space: nowrap; letter-spacing: 1px;}
+#footer .textEffect p{display: flex; align-items: center; gap: 0 16px; color: #FFF3E3; font-size: 40px; animation: textEffect02 40s linear infinite; font-family: 'Nicholas'; white-space: nowrap; letter-spacing: 1px;}
 #footer .textEffect p span{position: relative;  display: flex; align-items: center; gap: 0 16px;}
 #footer .textEffect p span::before{content: ''; margin-top: -4px; width: 19px; height: 23px; background: url(../images/text_icon.svg)no-repeat center; background-size: cover; } 
 
