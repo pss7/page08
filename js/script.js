@@ -8,22 +8,47 @@ $(function () {
 
   });
 
-  var $tiltTag = $('#infoWrap');
+  /* 스크롤 */
+  $(window).scroll(function () {
 
-  $(window).on('scroll', function () {
-    console.log(scrollTop);
-    var scrollTop = $(window).scrollTop();
+    var scrollPosition = $(this).scrollTop() + $(this).height() / 2;
 
-    if (scrollTop > 3700) { 
-      $tiltTag.addClass('active')
-    } else {
-      $tiltTag.removeClass('active')
-    }
+    $('#infoWrap .imgBox').each(function () {
+      var sectionTop = $(this).offset().top;
+      var sectionBottom = sectionTop + $(this).outerHeight();
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        $(this).parents('#infoWrap').addClass('active');
+      } else {
+        $(this).parents('#infoWrap').removeClass('active');
+      }
+    });
+
+  });
+
+  /* 스크롤 */
+  $(window).scroll(function () {
+
+    var scrollPosition = $(this).scrollTop() + $(this).height() / 5;
+
+    $('#cardWrap .cardBox').each(function () {
+      var sectionTop = $(this).offset().top;
+      var sectionBottom = sectionTop + $(this).outerHeight();
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        $(this).parents('#cardWrap').addClass('active');
+      } else {
+        $(this).parents('#cardWrap').removeClass('active');
+        $(this).removeClass('active');
+      }
+    });
   });
 
   /* 카드 */
   $('#cardWrap .cardBox').click(function () {
-    $(this).toggleClass('active');
+    if ($('#cardWrap').hasClass('active')) {
+      $(this).toggleClass('active');
+    }
   });
 
   /* 클릭 시 섹션 이동 */

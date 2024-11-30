@@ -118,8 +118,31 @@
 
 /* cardWrap */
 #cardWrap{padding: 170px 20px; background-color: #FEF9F3;}
+#cardWrap.active .cardBox .frontCard{transform: rotate(0);}
+#cardWrap.active .cardBox .backCard{transform: rotate(0) rotateY(180deg);}
+#cardWrap.active .cardBox span{bottom: 124px; right: -200px;} 
+#cardWrap .cardBox img{transform: rotate(4.2deg);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #cardWrap .cardBox{ position: relative; width: 431px; height: 707px; margin: 0 auto; cursor: pointer;}
-#cardWrap .cardBox span{position: absolute; bottom: 124px; right: -200px; color: #FFB654; font-weight: 700; font-size: 22px; font-family: 'STUNNING'; line-height: 1; z-index: 99;} 
+#cardWrap .cardBox span{position: absolute; bottom: 115px; right: -200px; color: #FFB654; font-weight: 700; font-size: 22px; font-family: 'STUNNING'; line-height: 1; z-index: 99;} 
 #cardWrap .cardBox span::before{content: ''; width: 377px; height: 22px; position: absolute; right: 0; bottom: -26px; background: url(../images/arrow_icon04.svg)no-repeat right; background-size: contain; z-index: 9;} 
 #cardWrap .cardBox::after{content: ''; }
 #cardWrap .cardBox img{position: absolute; left:0; top:0;  transition: all 1s;}
@@ -135,8 +158,11 @@
 
   #cardWrap .cardBox{width: 350px; height: 533px;}
   #cardWrap .cardBox img{width: 350px;}
-  #cardWrap .cardBox span{bottom: 82px; right: -111px;; font-size: 18px;}
+  #cardWrap .cardBox span{bottom: 75px; right: -100px; font-size: 18px;}
   #cardWrap .cardBox span::before{width: 220px; height: 14px; bottom: -21px;}
+
+
+  #cardWrap.active .cardBox span{bottom: 82px; right: -111px;} 
 
 }
 
@@ -144,8 +170,10 @@
 
   #cardWrap .cardBox{width: 300px; height: 457px;}
   #cardWrap .cardBox img{width: 300px;}
-  #cardWrap .cardBox span{bottom: 67px; font-size: 16px;}
+  #cardWrap .cardBox span{bottom: 62px; right: -108px; font-size: 16px;}
   #cardWrap .cardBox span::before{width: 170px; bottom: -17px;}
+
+  #cardWrap.active .cardBox span{bottom: 68px; right: -121px;} 
 
 }
 
@@ -153,17 +181,21 @@
 
   #cardWrap .cardBox{width: 270px; height: 411px;}
   #cardWrap .cardBox img{width: 270px;}
-  #cardWrap .cardBox span{bottom: 61px; right: -49px; font-size: 12px;}
+  #cardWrap .cardBox span{bottom: 57px; right: -41px; font-size: 12px;}
   #cardWrap .cardBox span::before{width: 98px;}
+
+  #cardWrap.active .cardBox span{bottom: 61px; right: -49px;} 
 
 }
 
 @media (max-width: 360px){
 
   #cardWrap .cardBox{width: 250px; height: 380px;}
-  #cardWrap .cardBox span{bottom: 58px; right: -33px; z-index: 9;}
+  #cardWrap .cardBox span{bottom: 53px; right: -26px; z-index: 9;}
   #cardWrap .cardBox span::before{width: 79px;}
   #cardWrap .cardBox img{width: 250px;}
+
+  #cardWrap.active .cardBox span{bottom: 58px; right: -33px;} 
 
 }
 
@@ -252,7 +284,7 @@
 
   #infoWrap{padding: 140px 0 500px;}
   #infoWrap::before{top: 50px; width: 283px; height: 387px;}
-  #infoWrap::after{bottom: 85px; width: 427px; height: 356px; transform: rotate(0)!important;}
+  #infoWrap::after{bottom: 85px; width: 427px; height: 356px;}
 
   #infoWrap .clockImg{top:159px; left:-120px; width: 350px; height: 350px;}
   #infoWrap .clockImg .clockImg01{width: 350px; height: 350px; }
@@ -318,7 +350,7 @@
 #libraryWrap .libraryListBox .libraryList li a .textBox h3{margin-bottom: 8px; font-size: 20px; font-weight: 700; color: #151515;}
 #libraryWrap .libraryListBox .libraryList li a .textBox p{color: #151515;}
 .viewBox{display: flex; justify-content: center;}
-.viewBox .view{display: block; margin: 0 auto; padding: 27px 113px 27px 44px; border-radius: 50px; color: #fff; font-family: 'STUNNING'; font-size: 18px; font-weight: 700; background-color: #242424; transition: all .3s;}
+.viewBox .view{display: block; margin: 0 auto; padding: 27px 113px 27px 44px; border-radius: 50px; color: #fff; font-family: 'STUNNING-Bd'; font-size: 18px; font-weight: 700; background-color: #242424; transition: all .3s;}
 .viewBox .view:hover{transform: scale(1.1)!important;}
 .viewBox .view span{position: relative;}
 .viewBox .view span::after{width: 45px; height: 36px; content: ''; position: absolute; top:-8px; right:-66px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover;} 
