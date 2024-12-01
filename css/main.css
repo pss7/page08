@@ -243,7 +243,7 @@
 /* infoWrap */
 #infoWrap{position: relative; padding: 140px 0; background-color: #F1F1E7; border-top: 2px solid #202020;}
 #infoWrap .clockImg{position: absolute; top:159px; left:-120px; width: 496px; height: 496px;}
-#infoWrap .clockImg .clockImg01{width: 496px; height: 496px; content: ''; position: absolute; top:0; left:0; animation: iconEffect 19s linear infinite;}
+#infoWrap .clockImg .clockImg01{width: 496px; height: 496px; position: absolute; top:0; left:0; animation: iconEffect 19s linear infinite;}
 #infoWrap .clockImg .clockImg02{width: 310px; height: 317px; position: absolute; top: 80px; left: 48%; transform: translateX(-50%);}
 #infoWrap::after{width: 581px; height: 717px; content: ''; position: absolute; bottom: -272px; right:0; background: url(../images/key_img.png)no-repeat center; background-size: cover; z-index: 9;}
 #infoWrap.active::after{transform: rotate(30deg);}
