@@ -3,7 +3,7 @@ $(function () {
   /* aos */
   $(window).load(function () {
     AOS.init({
-      duration: 3000
+      duration: 1500
     });
 
   });
@@ -53,6 +53,10 @@ $(function () {
 
   /* 클릭 시 섹션 이동 */
   $('.floorInfoBox .floorInfo li a').click(function () {
+    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+  });
+
+  $('#floorWrap .guideList li a').click(function () {
     $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
   });
 

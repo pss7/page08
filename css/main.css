@@ -18,7 +18,7 @@
 
 @media (max-width: 767px){
 
-  .floorInfoBox{margin-bottom: 24px;}
+  .floorInfoBox{margin-bottom: 36px;}
   .floorInfoBox .floorInfo li a{width: 45px; height: 45px; line-height: 50px; font-size: 18px;}
 
 }
@@ -72,7 +72,7 @@
 
   #titleWrap .title h1 img{width: 300px;}
   #titleWrap .title{margin-bottom: 33px;}
-  #titleWrap .title span{display: none;}
+  #titleWrap .title span{font-size: 24px;}
   #titleWrap .imgBox img{width: 650px; margin: 0 auto 48px;}
   #titleWrap{padding: 126px 0 0;}
   #titleWrap .imgBox span{padding: 20px 40px; font-size: 22px;}
@@ -85,6 +85,7 @@
 
 @media (max-width: 767px){
 
+  #titleWrap .title span{font-size: 20px;}
   #titleWrap .title h1 img{width: 250px;}
   #titleWrap .imgBox img{width: 460px;}
   #titleWrap .imgBox span{padding: 18px 38px; font-size: 20px;}
@@ -97,6 +98,7 @@
 
 @media (max-width: 480px){
 
+  #titleWrap .title span{font-size: 16px;}
   #titleWrap .title h1 img{width: 208px;}
   #titleWrap .imgBox img{width: 300px;}
   #titleWrap .imgBox span{padding: 14px 16px; font-size: 16px;}
@@ -117,7 +119,7 @@
 }
 
 /* cardWrap */
-#cardWrap{padding: 170px 20px; background-color: #FEF9F3;}
+#cardWrap{padding: 120px 20px 170px; background-color: #FEF9F3;}
 #cardWrap.active .cardBox .frontCard{transform: rotate(0);}
 #cardWrap.active .cardBox .backCard{transform: rotate(0) rotateY(180deg);}
 #cardWrap.active .cardBox span{bottom: 124px; right: -200px;} 
@@ -129,7 +131,7 @@
 #cardWrap .cardBox img{position: absolute; left:0; top:0;  transition: all 1s;}
 #cardWrap .cardBox .frontCard,
 #cardWrap .cardBox .backCard {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  backface-visibility: hidden; transition: transform 0.6s;}
+  backface-visibility: hidden; transition: transform 0.6s; object-fit: contain;}
 #cardWrap .cardBox .frontCard { z-index: 1; }
 #cardWrap .cardBox .backCard {transform: rotateY(180deg); z-index: 0;}
 #cardWrap .cardBox.active .frontCard {transform: rotateY(180deg);}
@@ -149,6 +151,7 @@
 
 @media (max-width: 767px){
 
+  #cardWrap{padding: 120px 20px 100px;}
   #cardWrap .cardBox{width: 300px; height: 457px;}
   #cardWrap .cardBox img{width: 300px;}
   #cardWrap .cardBox span{bottom: 62px; right: -108px; font-size: 16px;}
@@ -171,9 +174,9 @@
 
 @media (max-width: 360px){
 
-  #cardWrap .cardBox{width: 250px; height: 380px;}
-  #cardWrap .cardBox span{bottom: 53px; right: -26px; z-index: 9;}
-  #cardWrap .cardBox span::before{width: 79px;}
+  #cardWrap .cardBox{width: 192px; height: 319px;}
+  #cardWrap .cardBox span{bottom: 57px; right: -71px; z-index: 9;}
+  #cardWrap .cardBox span::before{width: 116px;}
   #cardWrap .cardBox img{width: 250px;}
 
   #cardWrap.active .cardBox span{bottom: 58px; right: -33px;} 
@@ -358,13 +361,13 @@
   #libraryWrap .libraryListBox .libraryList::after{top:-30px; right: -20px; width: 78px; height: 69px;}
   #libraryWrap .libraryListBox .libraryList::before{display: none;}
   #libraryWrap .libraryListBox .libraryList li:nth-child(3){position: relative;}
-  #libraryWrap .libraryListBox .libraryList li:nth-child(3)::before{content: ''; position: absolute; width: 74px; height: 72px; left: -40px; top: -35px; background: url(../images/library_icon03.svg)no-repeat; background-size: cover; z-index: -1;}
+  #libraryWrap .libraryListBox .libraryList li:nth-child(3)::before{content: ''; position: absolute; width: 74px; height: 72px; left: -40px; top: -35px; background: url(../images/library_icon03.png)no-repeat; background-size: cover; z-index: -1; animation: iconEffect02 1.1s alternate infinite;}
   #libraryWrap  .titleBox{margin-bottom: 41px;}
   #libraryWrap .libraryListBox .libraryList li a .textBox h3{font-size: 16px;}
   #libraryWrap .libraryListBox .libraryList li a .textBox p{font-size: 14px;}
 
-  .viewBox .view{padding: 13px 62px 11px 24px; font-size: 14px;}
-  .viewBox .view span::after{width: 24px; height: 18px; top: 0; right: -33px;}
+  .viewBox .view{padding: 15px 62px 14px 24px; font-size: 14px;}
+  .viewBox .view span::after{width: 24px; height: 18px; top: 1px; right: -33px;}
   
 }
 
@@ -381,10 +384,18 @@
 
 }
 
+@media (max-width: 360px){
+
+  #libraryWrap::after{width: 92px; height: 92px;top: 37px;}
+  #libraryWrap .libraryListBox .libraryList{gap: 60px 5%;}
+  #libraryWrap .libraryListBox .libraryList li{width: 47.5%;}
+
+}
+
 /* wellnessWrap */
 #wellnessWrap{position: relative; padding: 188px 0 211px; background-color: #E1EED6; border-top: 2px solid #202020; z-index: 1;}
 #wellnessWrap .imgBox{position: absolute;}
-#wellnessWrap .imgBox img{display: block;}
+#wellnessWrap .imgBox img{display: block; object-fit: contain;}
 #wellnessWrap .imgBox01{top:-170px; left:50px;}
 #wellnessWrap .imgBox02{bottom: -324px; right: 93px;}
 #wellnessWrap .wellnessListBox{position: relative; margin-bottom: 63px; z-index: 99; }
@@ -416,7 +427,7 @@
 
   #wellnessWrap .wellnessListBox .wellnessList li a .textBox h3{font-size: 18px;}
   #wellnessWrap .wellnessListBox .wellnessList li a .imgBox{margin-bottom: 15px;}
-  #wellnessWrap .imgBox01 img{width: 350px; height: 362px;}
+  #wellnessWrap .imgBox01 img{width: 250px; height: 362px;}
   #wellnessWrap .imgBox02 img{width: 250px; height: 530px;}
   #wellnessWrap .imgBox02{bottom: -210px;}
   
@@ -442,6 +453,15 @@
   #wellnessWrap .wellnessListBox .wellnessList li a .textBox p{font-size: 12px;}
   #wellnessWrap .imgBox01{top: -85px;width: 163px; height: 175px;}
 
+}
+
+@media (max-width: 360px){
+
+  #wellnessWrap .imgBox01{left: -40px;}
+  #wellnessWrap .imgBox01 img{width: 163px; height: 163px;}
+  #wellnessWrap .wellnessListBox .wellnessList{gap: 60px 5%;}
+  #wellnessWrap .wellnessListBox .wellnessList li{width: 47.5%;}
+  
 }
 
 /* meetingWrap */
@@ -499,7 +519,6 @@
   #meetingWrap .list li a{ padding: 30px 30px 20px; width: 300px; min-height: 180px;}
   #meetingWrap .list li a p{font-size: 18px;}
   #meetingWrap .list li a .name{font-size: 16px;}
-  #meetingWrap .list{width: 3600px;}
   #meetingWrap .list li{width: 300px;}
 
   #meetingWrap .list01{width: 3600px;}
@@ -510,7 +529,14 @@
 @media (max-width: 576px){
 
   #meetingWrap::after{width: 120px; height: 136px; left: 20px;}
-  #meetingWrap::before{right: 20px;}
+  #meetingWrap::before{bottom: 384px; right: 20px;}
+
+  #meetingWrap .list li{width: 250px;}
+  #meetingWrap .list li a{ padding: 25px 30px 20px; width: 250px; min-height: 150px;}
+  #meetingWrap .list li a p{font-size: 16px;}
+  #meetingWrap .list li a .name{font-size: 14px;}
+  #meetingWrap .list01{width: 3000px;}
+  #meetingWrap .list02{width: 2500px;}
 
 }
 
@@ -518,6 +544,24 @@
 
   #meetingWrap .participationBox .participationLink{width: 150px; height: 43px; line-height: 45px; font-size: 16px;} 
   #meetingWrap .participationBox img{width: 90%;} 
+
+}
+
+@media (max-widtH: 360px){
+
+  #meetingWrap .floorInfoBox{margin-bottom: 23px;}
+  #meetingWrap .list{margin-bottom: 10px; gap: 0 10px;}
+  #meetingWrap .list li{width: 200px;}
+  #meetingWrap .list li a{ padding: 24px 24px 20px; width: 200px; min-height: 120px; border-radius: 15px;}
+  #meetingWrap .list li a p{margin-bottom: 11px; font-size: 12px;}
+  #meetingWrap .list li a .name{font-size: 10px;}
+
+  #meetingWrap .list01{width: 2400px;}
+  #meetingWrap .list02{width: 2000px;}
+
+  #meetingWrap::after{width: 138px; height: 156px;}
+  #meetingWrap::before{width: 98px; height: 146px; bottom: 336px; right: 43px;}
+  #meetingWrap .list li a{border: 1px solid #000;}
 
 }
 
