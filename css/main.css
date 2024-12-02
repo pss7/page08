@@ -453,7 +453,7 @@
 #meetingWrap .participationBox img{display: block; max-width: 420px; width: 100%; margin: 0 auto 44px;}
 #meetingWrap .participationBox .participationLink{display: block; width: 243px; height: 77px; line-height: 77px; margin: 0 auto; background-color: #242424; text-align: center; color: #fff; font-size: 24px; font-weight: 700; border-radius: 50px; transition: all .3s;}
 #meetingWrap .participationBox .participationLink:hover{transform: scale(1.1)!important;}  
-#meetingWrap .list{position: relative; display: flex; gap: 0 20px; margin-bottom: 20px; width: 5040px;}
+#meetingWrap .list{position: relative; display: flex; gap: 0 20px; margin-bottom: 20px; width: 100%;}
 #meetingWrap .list:last-child{margin-bottom: 0;}
 #meetingWrap .list li{width: 420px;}
 #meetingWrap .list li a{padding: 44px 44px 20px; display: block; min-height: 240px; border-radius: 20px; border: 2px solid #000; background-color: #fff;}
@@ -462,8 +462,8 @@
 #meetingWrap .list li a:hover{background-color: #333;}
 #meetingWrap .list li a:hover p,
 #meetingWrap .list li a:hover .name{color: #fff;}
-#meetingWrap .list01{ animation: textEffect02 40s linear infinite;}
-#meetingWrap .list02{ animation: textEffect 40s linear infinite;}
+#meetingWrap .list01{width: 5040px; animation: textEffect02 40s linear infinite;}
+#meetingWrap .list02{width: 4200px; animation: textEffect 40s linear infinite;}
 
 @media (max-width: 1780px){
 
@@ -480,8 +480,10 @@
   #meetingWrap .list li a{padding: 35px 35px 20px; width: 350px; min-height: 220px;}
   #meetingWrap .list li a p{margin-bottom: 15px; font-size: 22px;}
   #meetingWrap .list li a .name{font-size: 20px;}
-  #meetingWrap .list{width: 4200px;}
   #meetingWrap .list li{width: 350px;}
+
+  #meetingWrap .list01{width: 4200px;}
+  #meetingWrap .list02{width: 3500px;}
 
 }
 
@@ -499,6 +501,9 @@
   #meetingWrap .list li a .name{font-size: 16px;}
   #meetingWrap .list{width: 3600px;}
   #meetingWrap .list li{width: 300px;}
+
+  #meetingWrap .list01{width: 3600px;}
+  #meetingWrap .list02{width: 3000px;}
 
 }
 
@@ -518,8 +523,8 @@
 
 #footer{position: relative; background-color: #D1895B;}
 #footer .textEffect{display: flex; align-items: center; padding: 12px 0; }
-#footer .textEffect p{display: flex; align-items: center; gap: 0 16px; color: #FFF3E3; font-size: 40px; animation: textEffect02 40s linear infinite; font-family: 'Nicholas'; white-space: nowrap; letter-spacing: 1px;}
-#footer .textEffect p span{position: relative;  display: flex; align-items: center; gap: 0 16px;}
+#footer .textEffect p{width: 200%; display: flex; align-items: center; gap: 0 16px; color: #FFF3E3; font-size: 40px; animation: textEffect02 40s linear infinite; font-family: 'Nicholas'; white-space: nowrap; letter-spacing: 1px;}
+#footer .textEffect p span{width: 50%; position: relative;  display: flex; align-items: center; gap: 0 16px;}
 #footer .textEffect p span::before{content: ''; margin-top: -4px; width: 19px; height: 23px; background: url(../images/text_icon.svg)no-repeat center; background-size: cover; } 
 
 @media (max-width: 1199px){
@@ -563,4 +568,5 @@
     transform: translateX(0);
   }
 }
+
 
