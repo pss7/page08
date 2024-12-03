@@ -29,7 +29,7 @@ $(function () {
   /* 스크롤 */
   $(window).scroll(function () {
 
-    var scrollPosition = $(this).scrollTop() + $(this).height() / 5;
+    var scrollPosition = $(this).scrollTop() + $(this).height() / 2;
 
     $('#cardWrap .cardBox').each(function () {
       var sectionTop = $(this).offset().top;
@@ -82,6 +82,5 @@ $(function () {
       }
     });
   }
-  windowOS()
-
+ 
 });
