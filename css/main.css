@@ -354,8 +354,8 @@
 @media (max-width: 767px){
 
   #libraryWrap{padding: 190px 0 78px;}
-  #libraryWrap .libraryListBox .libraryList{gap: 60px 2.2%;}
-  #libraryWrap .libraryListBox .libraryList li{width: 48.9%;}
+  #libraryWrap .libraryListBox .libraryList{gap: 60px 3.3%;}
+  #libraryWrap .libraryListBox .libraryList li{width: 48.3%;}
   #libraryWrap::after{left: 5.5%; top: 50px;}
   #libraryWrap .libraryListBox .libraryList::after{top:-30px; right: -20px; width: 78px; height: 69px;}
   #libraryWrap .libraryListBox .libraryList::before{display: none;}
@@ -377,9 +377,18 @@
 
 }
 
+@media (max-width: 480px){
+
+  #libraryWrap .libraryListBox .libraryList{gap: 60px 3.5%;}
+  #libraryWrap .libraryListBox .libraryList li{width: 48.2%;}
+
+}
+
 @media (max-width: 414px){
 
   #libraryWrap::after{width: 66px;height: 68px;}
+  #libraryWrap .libraryListBox .libraryList{gap: 60px 4.2%;}
+  #libraryWrap .libraryListBox .libraryList li{width: 47.9%;}
 
 }
 
@@ -406,7 +415,7 @@
 #wellnessWrap .wellnessListBox .wellnessList li a{display: block;}
 #wellnessWrap .wellnessListBox .wellnessList li a:hover .imgBox::before{opacity: 1; z-index: 2;}
 #wellnessWrap .wellnessListBox .wellnessList li a:hover .imgBox::after{opacity: 1; z-index: 1;}
-#wellnessWrap .wellnessListBox .wellnessList li a .imgBox{position: relative; /*padding-top: 105.4%;*/ margin-bottom: 24px; /*height: 0; border: 2px solid #000;*/ overflow: hidden; z-index: 1;}
+#wellnessWrap .wellnessListBox .wellnessList li a .imgBox{position: relative; /*padding-top: 105.4%;*/ margin-bottom: 24px; /*height: 0; border: 2px solid #000;*/ overflow: hidden; z-index: 1; border-radius: 150px 150px 0 0; border: 2px solid #000;}
 #wellnessWrap .wellnessListBox .wellnessList li a .imgBox img{/*position: absolute; top:0; left:0; right:0; bottom: 0;*/ display: block; width: 100%; height: 100%; object-fit: cover;}
 #wellnessWrap .wellnessListBox .wellnessList li a .imgBox::after{opacity: 0; content: ''; position: absolute; top:0; right:0; bottom: 0; left:0; background-color: rgba(0,0,0,.6); transition: all .3s;}
 #wellnessWrap .wellnessListBox .wellnessList li a .imgBox::before{opacity: 0; width: 80px; height: 80px; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/hover_arrow_icon.svg)no-repeat center; background-size: cover; transition: all .3s;}
@@ -438,8 +447,9 @@
 @media (max-width: 767px){
 
   #wellnessWrap{padding: 190px 0 78px;}
-  #wellnessWrap .wellnessListBox .wellnessList{gap: 60px 2.2%;}
-  #wellnessWrap .wellnessListBox .wellnessList li{width: 48.9%;}
+  #wellnessWrap .wellnessListBox .wellnessList{gap: 60px 3.3%;}
+  #wellnessWrap .wellnessListBox .wellnessList li a .imgBox{border-radius: 178px 178px 0 0;}
+  #wellnessWrap .wellnessListBox .wellnessList li{width: 48.3%;}
   #wellnessWrap  .titleBox{margin-bottom: 41px;}
   #wellnessWrap .wellnessListBox .wellnessList li a .textBox h3{font-size: 16px;}
   #wellnessWrap .wellnessListBox .wellnessList li a .textBox p{font-size: 14px;}
@@ -454,6 +464,22 @@
 
   #wellnessWrap .wellnessListBox .wellnessList li a .textBox p{font-size: 12px;}
   #wellnessWrap .imgBox01{top: -85px;width: 163px; height: 175px;}
+  #wellnessWrap .wellnessListBox .wellnessList li a .imgBox::before{width: 60px; height: 60px;}
+
+}
+
+@media (max-width: 480px){
+
+  #wellnessWrap .wellnessListBox .wellnessList{gap: 60px 3.5%;}
+  #wellnessWrap .wellnessListBox .wellnessList li{width: 48.2%;}
+  #wellnessWrap .wellnessListBox .wellnessList li a .imgBox::before{width: 40px; height: 40px;}
+
+}
+
+@media (max-width: 414px){
+
+  #wellnessWrap .wellnessListBox .wellnessList{gap: 60px 4.2%;}
+  #wellnessWrap .wellnessListBox .wellnessList li{width: 47.9%;}
 
 }
 
