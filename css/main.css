@@ -280,7 +280,7 @@
 
   #infoWrap{padding: 104px 0 120px;}
   #infoWrap::before{width: 176px; height: 239px;}
-  #infoWrap::after{width: 300px; height: 250px; right: -9px; bottom: -110px;}
+  #infoWrap::after{width: 231px; height: 157px; right: 11px; bottom: -19px;}
 
   #infoWrap .clockImg{ top:24px; left:-50px; width: 230px; height: 230px;}
   #infoWrap .clockImg .clockImg01{width: 230px; height: 230px; }
@@ -295,7 +295,7 @@
   #infoWrap .clockImg .clockImg01{width: 174px; height: 174px; }
   #infoWrap .clockImg .clockImg02{width: 120px; height: 150px; top: 8px;}
   #infoWrap::before{top: 39px; width: 150px; height: 202px;}
-  #infoWrap::after{width: 160px; right: 5px; bottom: -96px;}
+  #infoWrap::after{width: 160px; right: 5px;}
 
 }
 
