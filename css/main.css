@@ -278,6 +278,7 @@
 
 @media (max-width: 767px){
 
+  #infoWrap{padding: 104px 0 120px;}
   #infoWrap::before{width: 176px; height: 239px;}
   #infoWrap::after{width: 300px; height: 250px; right: -9px; bottom: -110px;}
 
@@ -290,12 +291,26 @@
 
 @media (max-width: 576px){
 
-  #infoWrap{padding: 232px 0 241px;}
   #infoWrap .clockImg{ top:62px; left:-50px; width: 174px; height: 174px;}
   #infoWrap .clockImg .clockImg01{width: 174px; height: 174px; }
   #infoWrap .clockImg .clockImg02{width: 120px; height: 150px; top: 8px;}
   #infoWrap::before{top: 39px; width: 150px; height: 202px;}
-  #infoWrap::after{width: 170px; bottom: 30px; right: 34px;}
+  #infoWrap::after{width: 160px; right: 5px; bottom: -96px;}
+
+}
+
+@media (max-width: 480px){
+
+  #infoWrap .clockImg .clockImg01{width: 150px; height: 150px; }
+  #infoWrap .clockImg .clockImg02{width: 80px; height: 110px; top: 15px; left: 44%;}
+
+}
+
+@media (max-width: 360px){
+
+  #infoWrap .clockImg .clockImg01{width: 110px; height: 110px; }
+  #infoWrap .clockImg .clockImg02{width: 50px; height: 80px; top: 12px; left: 33%;}
+  #infoWrap .clockImg{top: 34px; left: -41px;}
 
 }
 
@@ -354,7 +369,7 @@
 
 @media (max-width: 767px){
 
-  #libraryWrap{padding: 190px 0 78px;}
+  #libraryWrap{padding: 99px 0 86px;}
   #libraryWrap .libraryListBox .libraryList{gap: 60px 3.3%;}
   #libraryWrap .libraryListBox .libraryList li{width: 48.3%;}
   #libraryWrap::after{left: 5.5%; top: 50px;}
@@ -395,7 +410,7 @@
 
 @media (max-width: 360px){
 
-  #libraryWrap::after{width: 92px; height: 92px;top: 37px;}
+  #libraryWrap::after{width: 65px; height: 65px;top: 37px;}
   /* #libraryWrap .libraryListBox .libraryList li a .imgBox{padding-top: 125.4%;} */
   #libraryWrap .libraryListBox .libraryList{gap: 48px 5%;}
   #libraryWrap .libraryListBox .libraryList li{width: 47.5%;}
@@ -447,7 +462,7 @@
 
 @media (max-width: 767px){
 
-  #wellnessWrap{padding: 190px 0 78px;}
+  #wellnessWrap{padding: 92px 0 78px;}
   #wellnessWrap .wellnessListBox .wellnessList{gap: 60px 3.3%;}
   #wellnessWrap .wellnessListBox .wellnessList li a .imgBox{border-radius: 178px 178px 0 0;}
   #wellnessWrap .wellnessListBox .wellnessList li{width: 48.3%;}
@@ -542,7 +557,7 @@
 @media (max-width: 767px){
 
   #meetingWrap .participationBox{margin: 0 auto 198px;}
-  #meetingWrap{padding: 163px 40px 51px;}
+  #meetingWrap{padding: 76px 40px 51px;}
   #meetingWrap::after{width: 220px; height: 220px;}
   #meetingWrap .titleBox{margin-bottom: 26px;}
   #meetingWrap::before{width: 124px; height: 180px; right: 67px; bottom: 450px;}
@@ -576,6 +591,7 @@
 
   #meetingWrap .participationBox .participationLink{width: 125px; height: 45px; line-height: 45px; font-size: 16px;} 
   #meetingWrap .participationBox img{width: 90%;} 
+  #meetingWrap::after{width: 90px; height: 136px; left: 10px;}
 
 }
 
@@ -591,7 +607,7 @@
   #meetingWrap .list01{width: 2400px;}
   #meetingWrap .list02{width: 2000px;}
 
-  #meetingWrap::after{width: 138px; height: 156px;}
+  #meetingWrap::after{width: 79px; height: 120px;}
   #meetingWrap::before{width: 98px; height: 146px; bottom: 336px; right: 43px;}
   #meetingWrap .list li a{border: 1px solid #000;}
 
