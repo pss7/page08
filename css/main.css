@@ -352,7 +352,7 @@
 .viewBox .view{display: block; margin: 0 auto; padding: 27px 82px 27px 44px; border-radius: 50px; color: #fff; font-family: 'STUNNING-Bd-Bd'; font-size: 18px; font-weight: 700; background-color: #242424; transition: all .3s;}
 .viewBox .view:hover{transform: scale(1.1)!important;}
 .viewBox .view span{position: relative;}
-.viewBox .view span::after{width: 29px; height: 24px; content: ''; position: absolute; top:2px; right:-51px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover;} 
+.viewBox .view span::after{width: 29px; height: 24px; content: ''; position: absolute; top:53%; right:-51px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover; transform: translateY(-50%);} 
 
 @media (max-width: 1199px){
 
@@ -363,7 +363,7 @@
   #libraryWrap .libraryListBox .libraryList li a .imgBox{margin-bottom: 15px;}
 
   .viewBox .view{padding: 25px 70px 24px 35px;}
-  .viewBox .view span::after{width: 23px; height: 20px; top: 4px; right: -40px;}
+  .viewBox .view span::after{width: 23px; height: 20px; right: -40px;}
   
 }
 
@@ -382,7 +382,7 @@
   #libraryWrap .libraryListBox .libraryList li a .textBox p{font-size: 14px;}
 
   .viewBox .view{padding: 14px 48px 14px 24px; font-size: 14px;}
-  .viewBox .view span::after{width: 17px; height: 14px; top: 4px; right: -28px;}
+  .viewBox .view span::after{width: 17px; height: 14px; right: -28px;}
   
 }
 
