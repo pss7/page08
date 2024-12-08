@@ -333,10 +333,10 @@
 #libraryWrap .libraryListBox .libraryList li a .textBox h3{margin-bottom: 8px; font-size: 20px; font-weight: 700; color: #151515;}
 #libraryWrap .libraryListBox .libraryList li a .textBox p{color: #151515;}
 .viewBox{display: flex; justify-content: center;}
-.viewBox .view{display: block; margin: 0 auto; padding: 27px 113px 27px 44px; border-radius: 50px; color: #fff; font-family: 'STUNNING-Bd-Bd'; font-size: 18px; font-weight: 700; background-color: #242424; transition: all .3s;}
+.viewBox .view{display: block; margin: 0 auto; padding: 27px 82px 27px 44px; border-radius: 50px; color: #fff; font-family: 'STUNNING-Bd-Bd'; font-size: 18px; font-weight: 700; background-color: #242424; transition: all .3s;}
 .viewBox .view:hover{transform: scale(1.1)!important;}
 .viewBox .view span{position: relative;}
-.viewBox .view span::after{width: 45px; height: 36px; content: ''; position: absolute; top:-8px; right:-66px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover;} 
+.viewBox .view span::after{width: 29px; height: 24px; content: ''; position: absolute; top:2px; right:-51px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover;} 
 
 @media (max-width: 1199px){
 
@@ -347,7 +347,7 @@
   #libraryWrap .libraryListBox .libraryList li a .imgBox{margin-bottom: 15px;}
 
   .viewBox .view{padding: 25px 70px 24px 35px;}
-  .viewBox .view span::after{width: 30px; height: 23px; top: -1px; right: -44px;}
+  .viewBox .view span::after{width: 23px; height: 20px; top: 4px; right: -40px;}
   
 }
 
@@ -365,8 +365,8 @@
   #libraryWrap .libraryListBox .libraryList li a .textBox h3{font-size: 16px;}
   #libraryWrap .libraryListBox .libraryList li a .textBox p{font-size: 14px;}
 
-  .viewBox .view{padding: 15px 62px 14px 24px; font-size: 14px;}
-  .viewBox .view span::after{width: 24px; height: 18px; top: 1px; right: -33px;}
+  .viewBox .view{padding: 14px 48px 14px 24px; font-size: 14px;}
+  .viewBox .view span::after{width: 17px; height: 14px; top: 4px; right: -28px;}
   
 }
 
@@ -501,8 +501,8 @@
 #meetingWrap::before{width: 298px; height: 407px; content: ''; position: absolute; bottom: 773px; right: 195px; background: url(../images/meeting_img02.png)no-repeat center; background-size: cover; animation: iconEffect02 1.1s alternate infinite;} 
 #meetingWrap .titleBox{margin-bottom: 79px;}
 #meetingWrap .participationBox{margin: 0 auto 256px; max-width: 626px; width: 100%; padding: 32px 20px 32px; background-color: #fff; border-radius: 20px; box-shadow: 0 0 10px rgba(119, 54, 8, 0.25);} 
-#meetingWrap .participationBox img{display: block; max-width: 420px; width: 100%; margin: 0 auto 44px;}
-#meetingWrap .participationBox .participationLink{display: block; width: 243px; height: 77px; line-height: 77px; margin: 0 auto; background-color: #242424; text-align: center; color: #fff; font-size: 24px; font-weight: 700; border-radius: 50px; transition: all .3s;}
+#meetingWrap .participationBox img{display: block; max-width: 420px; width: 100%; margin: 0 auto 32px;}
+#meetingWrap .participationBox .participationLink{display: block; width: 160px; height: 60px; line-height: 60px; margin: 0 auto; background-color: #242424; text-align: center; color: #fff; font-size: 20px; font-weight: 700; border-radius: 50px; transition: all .3s;}
 #meetingWrap .participationBox .participationLink:hover{transform: scale(1.1)!important;}  
 #meetingWrap .list{position: relative; display: flex; gap: 0 20px; margin-bottom: 20px; width: 100%;}
 #meetingWrap .list:last-child{margin-bottom: 0;}
@@ -527,7 +527,7 @@
   #meetingWrap::before{width: 180px; height: 250px; right: 50px; bottom: 625px;}
   #meetingWrap::after{width: 180px; height: 250px; top: 0; left: 0;}
   #meetingWrap .titleBox{margin-bottom: 60px;}
-  #meetingWrap .participationBox .participationLink{width: 200px; height: 70px; line-height: 70px; font-size: 22px;}
+  #meetingWrap .participationBox .participationLink{width: 150px; height: 55px; line-height: 55px; font-size: 18px;}
   #meetingWrap .list li a{padding: 35px 35px 20px; width: 350px; min-height: 220px;}
   #meetingWrap .list li a p{margin-bottom: 15px; font-size: 22px;}
   #meetingWrap .list li a .name{font-size: 20px;}
@@ -545,7 +545,7 @@
   #meetingWrap::after{width: 220px; height: 220px;}
   #meetingWrap .titleBox{margin-bottom: 26px;}
   #meetingWrap::before{width: 124px; height: 180px; right: 67px; bottom: 450px;}
-  #meetingWrap .participationBox .participationLink{width: 180px; height: 60px; line-height: 60px; font-size: 18px;}
+  #meetingWrap .participationBox .participationLink{width: 145px; height: 50px; line-height: 50px;}
   #meetingWrap .list{gap: 0 15px;}
   #meetingWrap .list li a{ padding: 30px 30px 20px; width: 300px; min-height: 180px;}
   #meetingWrap .list li a p{font-size: 18px;}
@@ -573,7 +573,7 @@
 
 @media (max-width: 414px){
 
-  #meetingWrap .participationBox .participationLink{width: 150px; height: 43px; line-height: 45px; font-size: 16px;} 
+  #meetingWrap .participationBox .participationLink{width: 125px; height: 45px; line-height: 45px; font-size: 16px;} 
   #meetingWrap .participationBox img{width: 90%;} 
 
 }
