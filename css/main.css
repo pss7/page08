@@ -70,14 +70,13 @@
 
 @media (max-width: 1199px){
 
+  #titleWrap{padding: 90px 0 0;}
   #titleWrap .title h1 img{width: 300px;}
   #titleWrap .title{margin-bottom: 33px;}
   #titleWrap .title span{font-size: 24px;}
   #titleWrap .imgBox img{width: 650px; margin: 0 auto 48px;}
-  #titleWrap{padding: 126px 0 0;}
   #titleWrap .imgBox span{padding: 20px 40px; font-size: 22px;}
   #titleWrap .imgBox span::after{top: -28px; width: 22px; height: 29px;}
-
   #titleWrap .textEffect01{top: 46%;}
   #titleWrap .textEffect02{top: 61%;}
 
@@ -85,6 +84,7 @@
 
 @media (max-width: 767px){
 
+  #titleWrap{padding: 80px 0 0;}
   #titleWrap .title span{font-size: 20px;}
   #titleWrap .title h1 img{width: 250px;}
   #titleWrap .imgBox img{width: 460px;}
@@ -98,6 +98,7 @@
 
 @media (max-width: 480px){
 
+  #titleWrap{padding: 65px 0 0;}
   #titleWrap .title span{font-size: 16px;}
   #titleWrap .title h1 img{width: 208px;}
   #titleWrap .imgBox img{width: 300px;}
