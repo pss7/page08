@@ -350,8 +350,8 @@
 .viewBox{display: flex; justify-content: center;}
 .viewBox .view{display: block; margin: 0 auto; padding: 27px 82px 27px 44px; border-radius: 50px; color: #fff; font-family: 'STUNNING-Bd-Bd'; font-size: 18px; font-weight: 700; background-color: #242424; transition: all .3s;}
 .viewBox .view:hover{transform: scale(1.1)!important;}
-.viewBox .view span{position: relative;}
-.viewBox .view span::after{width: 29px; height: 24px; content: ''; position: absolute; top:53%; right:-51px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover; transform: translateY(-50%);} 
+.viewBox .view span{position: relative; display: block; line-height: 1;}
+.viewBox .view span::after{width: 29px; height: 24px; content: ''; position: absolute; top:50%; right:-51px; background: url(../images/arrow_icon03.svg)no-repeat center; background-size: cover; transform: translateY(-50%);} 
 
 @media (max-width: 1199px){
 
